@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark theme colors (default) */
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 15, 15, 15;
+  --surface-rgb: 26, 26, 26;
+  --secondary-rgb: 170, 170, 170;
+  --accent-rgb: 110, 110, 110;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --divider-color: rgba(110, 110, 110, 0.3);
+  --gradient-1: 30, 30, 40;
+  --gradient-2: 10, 10, 20;
+}
+
+/* Light theme colors */
+[data-theme='light'] {
+  --foreground-rgb: 15, 15, 15;
+  --background-rgb: 250, 250, 250;
+  --surface-rgb: 240, 240, 240;
+  --secondary-rgb: 100, 100, 100;
+  --accent-rgb: 80, 80, 80;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --divider-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 20% 20%, rgba(var(--gradient-1, 30, 30, 40), 0.05), transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(var(--gradient-2, 10, 10, 20), 0.08), transparent 40%);
+  pointer-events: none;
+}
+
+::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='light'] ::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-8;
+  }
+  
+  .section-divider {
+    @apply w-full h-px my-16;
+    background-color: var(--divider-color);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+} 
