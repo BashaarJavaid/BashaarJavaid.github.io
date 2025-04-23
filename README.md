@@ -27,13 +27,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deploying to GitHub Pages
 
-This portfolio is configured for deployment to GitHub Pages as a user site. Follow these steps to deploy:
+This portfolio is configured for deployment to GitHub Pages. Follow these steps to deploy:
 
 ### Automatic Deployment (Recommended)
 
 1. Push your changes to the `main` branch of your GitHub repository
 2. GitHub Actions will automatically build and deploy your site
-3. Your site will be available at `https://bashaarJavaid.github.io/`
+3. Your site will be available at `https://{username}.github.io/web-portfolio2`
 
 ### Manual Deployment
 
@@ -47,7 +47,7 @@ This portfolio is configured for deployment to GitHub Pages as a user site. Foll
    npm run deploy
    ```
 
-3. Your site will be deployed to the `main` branch of your repository
+3. Your site will be deployed to the `gh-pages` branch of your repository
 
 ## GitHub Pages Configuration
 
@@ -57,9 +57,9 @@ This portfolio is configured for deployment to GitHub Pages as a user site. Foll
 
 ## Important Notes
 
-- For user GitHub Pages sites (username.github.io), the content must be in the main branch
 - All static assets (images, etc.) should be placed in the `public` folder
-- The site uses no basePath in the configuration since it will be served from the root domain
+- The site uses the `basePath` configuration in `next.config.js` to handle GitHub Pages paths
+- Remember to update the `basePath` in `next.config.js` if you change your repository name
 
 ## Built With
 
@@ -81,9 +81,4 @@ You can customize the content by editing the components in the `app/components` 
 
 ## Deployment
 
-This project can be easily deployed to Vercel, Netlify, or other platforms that support Next.js.
-
-## Deployment Status
-
-Last deployed: June 2023
-Updated: June 2023 
+This project can be easily deployed to Vercel, Netlify, or other platforms that support Next.js. 
