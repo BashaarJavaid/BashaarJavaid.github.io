@@ -81,4 +81,9 @@ You can customize the content by editing the components in the `app/components` 
 
 ## Deployment
 
-This project can be easily deployed to Vercel, Netlify, or other platforms that support Next.js. 
+This project can be easily deployed to Vercel, Netlify, or other platforms that support Next.js.
+
+## Deployment Status
+
+Last deployed: June 2023
+Updated: June 2023 
