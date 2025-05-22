@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '',
+  basePath: '/BashaarJavaid.github.io',
   trailingSlash: true,
 };
 
