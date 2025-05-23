@@ -18,7 +18,7 @@ const educations: EducationProps[] = [
     degree: "Bachelor of Arts in Computer Science, Minor in Data Science",
     university: "DePauw University",
     location: "Greencastle, Indiana",
-    dateRange: "2021 - 2025",
+    dateRange: "2021 - 2026",
     awards: [
       "Academic Scholarship",
       "Member of the University Golf Team"

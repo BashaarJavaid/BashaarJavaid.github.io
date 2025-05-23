@@ -22,7 +22,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     name: "Web Development",
-    skills: ["FastAPI/Django/Flask", "ETL/Web Scraping"]
+    skills: ["FastAPI/Django/Flask","RabbitMQ", "ETL/Web Scraping", "Next.js"]
   },
   {
     name: "Cloud & DevOps",
@@ -31,6 +31,10 @@ const skillCategories: SkillCategory[] = [
   {
     name: "Data Engineering",
     skills: ["Database Management", "Message Queue Architecture", "Vector Databases/Knowledge Graphs"]
+  },
+  {
+    name: "Agentic Frameworks",
+    skills: ["Letta", "AutoGen", "LangChain", "LangGraph","LangFuse"]
   }
 ];
 

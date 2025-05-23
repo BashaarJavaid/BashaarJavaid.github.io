@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Malik Bashaar | Software Engineer',
-  description: 'Personal portfolio of Malik Bashaar Javaid, Software Engineer specializing in Machine Learning and Agentic Systems',
+  description: 'Software Engineer specializing in Agentic AI Systems and Production ML Frameworks. Experienced in building multi-agent architectures that automate complex workflows - from legal research systems with persistent memory to enterprise-scale document classification frameworks. Passionate about developing intelligent agents that bridge the gap between AI capabilities and real-world business applications.',
 }
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
                   <FaLinkedin className="text-xl" />
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/BashaarJavaid" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors p-2 hover:bg-accent/10 rounded-full"

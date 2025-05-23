@@ -21,7 +21,7 @@ const projects: ProjectProps[] = [
     client: 'Personal Project',
     description: 'AI framework for automating international trade law research using a hierarchical multi-agent system',
     image: '/images/project1.jpg',
-    technologies: ['Python', 'FastAPI', 'Letta', 'LangFuse']
+    technologies: ['Python', 'FastAPI', 'Letta', 'LangFuse','Docker']
   },
   {
     title: 'Agentic Framework for SDS Classification',
@@ -29,6 +29,20 @@ const projects: ProjectProps[] = [
     description: 'Production-grade framework that automates SDS classification per firecode compliance',
     image: '/images/project2.jpg',
     technologies: ['Python', 'Docker', 'AWS', 'Azure', 'LangFuse']
+  },
+  {
+    title: 'Library Management System',
+    client: 'Personal Project',
+    description: 'Java-based library system with SQLite backend supporting advanced book management and search',
+    image: '/images/project5.jpg',
+    technologies: ['Java', 'SQLite', 'JDBC', 'UI Design']
+  },
+  {
+    title: 'Stock Market Predictor',
+    client: 'Personal Project',
+    description: 'ML application forecasting stock prices using Random Forest and LSTM with interactive visualizations',
+    image: '/images/project6.jpg',
+    technologies: ['Python', 'TensorFlow', 'Random Forest', 'REST API', 'Data Visualization']
   },
   {
     title: 'Customer Service Chatbot',

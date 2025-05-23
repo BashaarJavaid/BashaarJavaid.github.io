@@ -56,8 +56,9 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Software Engineer specialized in Machine Learning and Agentic Systems Development.
-            Currently working on production-grade frameworks that automate document classification and processing.
+            Software Engineer specializing in Agentic AI Systems and Production ML Frameworks. 
+            Experienced building multi-agent architectures that automate complex workflows and enterprise-scale document processing. 
+            Passionate about developing intelligent agents that bridge AI capabilities with real-world business applications.
           </motion.p>
           
           <motion.div 
@@ -78,7 +79,7 @@ export default function Header() {
               </div>
               <span>Malik Bashaar Javaid</span>
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
+            <a href="https://github.com/BashaarJavaid" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
               <div className="bg-accent/10 p-2 rounded-full group-hover:bg-accent/20 transition-colors">
                 <FaGithub className="text-accent" />
               </div>
