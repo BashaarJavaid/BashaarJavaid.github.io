@@ -35,11 +35,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Update basePath in next.config.js
-        run: |
-          REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)
-          sed -i "s|basePath: '',|basePath: '/$REPO_NAME',|g" next.config.js
-          cat next.config.js
+      # For username.github.io repositories, we don't need a basePath
+      # - name: Update basePath in next.config.js
+      #   run: |
+      #     REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)
+      #     sed -i "s|basePath: '',|basePath: '/$REPO_NAME',|g" next.config.js
+      #     cat next.config.js
 
       - name: Build and Export
         run: npm run build
