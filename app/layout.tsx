@@ -45,7 +45,7 @@ export default function RootLayout({
                   <FaGithub className="text-xl" />
                 </a>
                 <a 
-                  href="mailto:mjavaid_2025@depauw.edu"
+                  href="mailto:bashaarjavaid@gmail.com"
                   className="hover:text-primary transition-colors p-2 hover:bg-accent/10 rounded-full"
                   aria-label="Email"
                 >

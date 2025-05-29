@@ -67,11 +67,11 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <a href="mailto:mjavaid_2025@depauw.edu" className="flex items-center gap-2 hover:text-primary transition-colors group">
+            <a href="mailto:bashaarjavaid@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors group">
               <div className="bg-accent/10 p-2 rounded-full group-hover:bg-accent/20 transition-colors">
                 <FaEnvelope className="text-accent" />
               </div>
-              <span>mjavaid_2025@depauw.edu</span>
+              <span>bashaarjavaid@gmail.com</span>
             </a>
             <a href="https://linkedin.com/in/malik-bashaar-javaid" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors group">
               <div className="bg-accent/10 p-2 rounded-full group-hover:bg-accent/20 transition-colors">
