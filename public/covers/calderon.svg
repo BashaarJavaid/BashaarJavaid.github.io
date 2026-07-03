@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#242424"/>
+  <g fill="none" stroke="#e8e6e1" stroke-width="2">
+    <path d="M80 700 C 200 640, 280 760, 400 700 S 600 640, 720 700" opacity="0.3"/>
+    <path d="M80 620 C 200 560, 280 680, 400 620 S 600 560, 720 620" opacity="0.5"/>
+    <path d="M80 540 C 200 480, 280 600, 400 540 S 600 480, 720 540" opacity="0.7"/>
+    <path d="M80 460 C 200 400, 280 520, 400 460 S 600 400, 720 460" opacity="0.9"/>
+    <path d="M80 380 C 200 320, 280 440, 400 380 S 600 320, 720 380"/>
+  </g>
+  <g stroke="#e8e6e1" stroke-width="3" fill="none">
+    <path d="M80 800 L240 720 L400 760 L560 640 L720 560" stroke-dasharray="10 8"/>
+  </g>
+  <g fill="#e8e6e1">
+    <circle cx="240" cy="720" r="7"/>
+    <circle cx="400" cy="760" r="7"/>
+    <circle cx="560" cy="640" r="7"/>
+    <circle cx="720" cy="560" r="7"/>
+  </g>
+  <g fill="#e8e6e1" font-family="monospace" font-size="22" opacity="0.6">
+    <text x="80" y="120">DEMAND FORECASTING</text>
+    <text x="80" y="935">CONTINUOUS RETRAINING</text>
+  </g>
+</svg>

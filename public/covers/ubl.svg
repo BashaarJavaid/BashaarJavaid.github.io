@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#242424"/>
+  <g stroke="#e8e6e1" stroke-width="2" opacity="0.6">
+    <path d="M400 500 L220 300"/>
+    <path d="M400 500 L600 280"/>
+    <path d="M400 500 L180 640"/>
+    <path d="M400 500 L620 660"/>
+    <path d="M400 500 L400 780"/>
+    <path d="M220 300 L600 280"/>
+    <path d="M180 640 L400 780"/>
+    <path d="M620 660 L400 780"/>
+    <path d="M600 280 L620 660"/>
+    <path d="M220 300 L180 640"/>
+  </g>
+  <g fill="#242424" stroke="#e8e6e1" stroke-width="3">
+    <circle cx="400" cy="500" r="34"/>
+    <circle cx="220" cy="300" r="22"/>
+    <circle cx="600" cy="280" r="26"/>
+    <circle cx="180" cy="640" r="20"/>
+    <circle cx="620" cy="660" r="24"/>
+    <circle cx="400" cy="780" r="22"/>
+  </g>
+  <circle cx="400" cy="500" r="10" fill="#e8e6e1"/>
+  <g fill="#e8e6e1" font-family="monospace" font-size="22" opacity="0.6">
+    <text x="80" y="120">KNOWLEDGE GRAPH + LLM</text>
+    <text x="80" y="935">RETRIEVAL: 3X FASTER</text>
+  </g>
+</svg>

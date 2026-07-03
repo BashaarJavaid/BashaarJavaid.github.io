@@ -1,0 +1,33 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  user-select: none;
+}
+
+.track {
+  display: flex;
+  flex-shrink: 0;
+  animation: scroll var(--marquee-duration, 24s) linear infinite;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 0.6em;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

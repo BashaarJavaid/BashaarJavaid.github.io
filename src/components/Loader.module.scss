@@ -1,0 +1,70 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--pad);
+  transition: transform 0.9s var(--ease-inout), opacity 0.4s ease 0.6s;
+}
+
+.done {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.counter {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 14vw, 200px);
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 6vw, 72px);
+  text-transform: uppercase;
+  line-height: 0.95;
+  overflow: hidden;
+}
+
+.name span {
+  display: block;
+  animation: rise 0.9s var(--ease-out) both 0.15s;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--fg);
+  width: 0%;
+}

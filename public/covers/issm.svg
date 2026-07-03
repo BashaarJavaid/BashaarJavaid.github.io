@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#242424"/>
+  <g fill="none" stroke="#e8e6e1">
+    <g stroke-width="2">
+      <rect x="180" y="180" width="360" height="460" opacity="0.25"/>
+      <rect x="210" y="220" width="360" height="460" opacity="0.5"/>
+      <rect x="240" y="260" width="360" height="460" opacity="0.75"/>
+      <rect x="270" y="300" width="360" height="460"/>
+    </g>
+    <g stroke-width="3" opacity="0.9">
+      <path d="M310 380 h200"/>
+      <path d="M310 430 h280"/>
+      <path d="M310 480 h240"/>
+      <path d="M310 530 h280"/>
+      <path d="M310 580 h160"/>
+      <path d="M310 630 h260"/>
+    </g>
+  </g>
+  <g fill="#e8e6e1">
+    <rect x="80" y="820" width="52" height="52" opacity="0.25"/>
+    <rect x="144" y="820" width="52" height="52" opacity="0.45"/>
+    <rect x="208" y="820" width="52" height="52" opacity="0.65"/>
+    <rect x="272" y="820" width="52" height="52" opacity="0.85"/>
+    <rect x="336" y="820" width="52" height="52"/>
+  </g>
+  <g fill="#e8e6e1" font-family="monospace" font-size="22" opacity="0.6">
+    <text x="80" y="120">DOCS: 317,000+</text>
+    <text x="80" y="935">78% PROCESSING TIME</text>
+  </g>
+</svg>

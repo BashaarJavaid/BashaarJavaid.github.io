@@ -1,0 +1,150 @@
+.section {
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.canvasWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: calc(var(--pad) + 8px) var(--pad);
+  z-index: 5;
+}
+
+.overlayRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.title {
+  font-size: clamp(40px, 7vw, 110px);
+  color: var(--fg);
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hint {
+  text-align: right;
+  flex-shrink: 0;
+  padding-bottom: 10px;
+}
+
+.toggle {
+  position: absolute;
+  top: calc(var(--header-h) + 12px);
+  left: var(--pad);
+  z-index: 6;
+  display: flex;
+  gap: 4px;
+  pointer-events: auto;
+}
+
+.toggleBtn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.toggleBtn:hover {
+  color: var(--fg);
+}
+
+.toggleActive {
+  color: var(--bg);
+  background: var(--fg);
+  border-color: var(--fg);
+}
+
+.toggleActive:hover {
+  color: var(--bg);
+}
+
+/* --- index / list view --- */
+
+.list {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: var(--bg);
+  overflow-y: auto;
+  padding: calc(var(--header-h) + 72px) var(--pad) 120px;
+}
+
+.listCount {
+  margin-bottom: 40px;
+}
+
+.yearGroup {
+  display: grid;
+  grid-template-columns: minmax(60px, 160px) 1fr;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+}
+
+.year {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--fg-dim);
+  padding-top: 10px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding: 10px 0;
+  transition: opacity 0.3s ease, transform 0.5s var(--ease-out);
+}
+
+.rows:hover .row {
+  opacity: 0.35;
+}
+
+.rows .row:hover {
+  opacity: 1;
+  transform: translateX(12px);
+}
+
+.rowTitle {
+  font-size: clamp(26px, 4.5vw, 56px);
+  color: var(--fg);
+}
+
+.rowMeta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .yearGroup {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .rowMeta {
+    display: none;
+  }
+}

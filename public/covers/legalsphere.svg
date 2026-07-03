@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#242424"/>
+  <g fill="none" stroke="#e8e6e1" stroke-width="2">
+    <circle cx="400" cy="500" r="280"/>
+    <ellipse cx="400" cy="500" rx="280" ry="110" opacity="0.7"/>
+    <ellipse cx="400" cy="500" rx="280" ry="200" opacity="0.45"/>
+    <ellipse cx="400" cy="500" rx="110" ry="280" opacity="0.7"/>
+    <ellipse cx="400" cy="500" rx="200" ry="280" opacity="0.45"/>
+    <path d="M120 500 h560" opacity="0.7"/>
+  </g>
+  <g fill="#e8e6e1">
+    <circle cx="400" cy="220" r="8"/>
+    <circle cx="680" cy="500" r="8"/>
+    <circle cx="400" cy="780" r="8"/>
+    <circle cx="120" cy="500" r="8"/>
+    <circle cx="510" cy="390" r="6" opacity="0.8"/>
+    <circle cx="290" cy="610" r="6" opacity="0.8"/>
+  </g>
+  <g fill="#e8e6e1" font-family="monospace" font-size="22" opacity="0.6">
+    <text x="80" y="120">TRADE LAW × AGENTS</text>
+    <text x="80" y="935">RESEARCH: 70% TIME</text>
+  </g>
+</svg>
