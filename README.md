@@ -1,4 +1,4 @@
-# Bashaar Javaid — Portfolio
+# Malik Bashaar Javaid — Portfolio
 
 Phantom.land-inspired portfolio website. Dark WebGL-driven experience with an
 infinite draggable project grid, custom shader post-processing (distortion +
